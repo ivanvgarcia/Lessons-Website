@@ -64,7 +64,7 @@ $(document).ready(function () {
 
     // Animate Waypoint
     $('.js--wp-1').waypoint(function (direction) {
-        $('.js--wp-1').addClass('animated tada');
+        $('.js--wp-1').addClass('animated jackInTheBox');
     }, {
         offset: '50%'
     });
@@ -93,19 +93,19 @@ $(document).ready(function () {
         offset: '50%'
     });
 
-//    $('.js--nav-icon').click(function () {
-//        var nav = $('.js--nav');
-//        var icon = $('.js--nav--icon i');
-//
-//        nav.slideToggle(200);
-//        
-//        if (icon.hasClass('fa-bars')) {
-//            icon.addClass('fa-times');
-//            icon.removeClass('fa fa-bars');
-//        } else {
-//            icon.addClass('fa-bars');
-//            icon.removeClass('fa-times');
-//        }
-//    });
+    //    $('.js--nav-icon').click(function () {
+    //        var nav = $('.js--nav');
+    //        var icon = $('.js--nav--icon i');
+    //
+    //        nav.slideToggle(200);
+    //        
+    //        if (icon.hasClass('fa-bars')) {
+    //            icon.addClass('fa-times');
+    //            icon.removeClass('fa fa-bars');
+    //        } else {
+    //            icon.addClass('fa-bars');
+    //            icon.removeClass('fa-times');
+    //        }
+    //    });
 
 });

@@ -32,20 +32,17 @@ MAIN NAVIGATION
     transition: .6s;
 }
 
-.navbar-inverse .navbar-nav li a:hover {
-    background-color: #d1a11f;
-}
-
-.navbar.navbar-inverse .dropdown-menu {
-    background-color: #d1a11f;
-}
-
-.navbar.navbar-inverse .dropdown-menu > li > a {
+.navbar-inverse .navbar-nav .open .dropdown-menu {
+    background-color: #2c3e50;
     color: #fff;
 }
 
-.navbar.navbar-inverse .dropdown-menu > li > a:hover,
-.navbar.navbar-inverse .dropdown-menu > li > a:focus {
+.navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
+    background-color: #2c3e50;
+    color: #fff;
+}
+
+.navbar-inverse .navbar-nav .open .dropdown-menu > li > a:hover {
     background-color: #fff;
     color: #2c3e50;
 }
@@ -118,7 +115,15 @@ HOME PAGE
     text-align: center;
 }
 
+.thumbnail {
+    box-shadow: 1px 1px #2c3e50;
+    ;
+}
 
+.thumbnail img {
+    box-shadow: 1px 2px #2c3e50;
+    ;
+}
 
 .fa-superpowers {
     color: #fff;
@@ -234,42 +239,39 @@ ANIMATIONS
 
 @media only screen and (min-device-width: 220px) and (max-device-width: 640px) and (-webkit-min-device-pixel-ratio: 2) {
     .nav,
-    .navbar-brand {
-        font-size: 4.3rem;
-        padding: 40px;
+    .navbar-brand,
+    #about {
+        font-size: 2.3rem;
     }
 
     .navbar.navbar-inverse .dropdown-menu {
-        font-size: 3.3rem;
-    }
-    
-    .fa-bars {
-        display: inline-block;
+        font-size: 2.3rem;
     }
 
     .header-text h1 {
-        font-size: 5em;
+        font-size: 1.5em;
+        padding: 0 4px;
     }
 
     .header-text .btn {
-        font-size: 2em;
-        text-align: center;
+        font-size: 1em;
     }
 
     h2 {
-        font-size: 9rem;
+        font-size: 4rem;
+        margin: 20px 0;
     }
 
     h3 {
-        font-size: 7rem;
+        font-size: 3.5rem;
     }
 
     p {
-        font-size: 4.5rem;
+        font-size: 2rem;
     }
 
-    .container {
-        width: 100%;
+    section {
+        margin: 20px;
     }
 
     .thumbnail {
@@ -277,25 +279,28 @@ ANIMATIONS
     }
 
     .caption a {
-        font-size: 3.5rem;
+        font-size: 2rem;
     }
 
     #about h4 {
-        font-size: 7rem;
         color: #2c3e50;
         display: inline-block;
         margin: 40px 0;
     }
 
+    .about-text {
+        padding: 20px;
+    }
+
     .fa-linkedin-square {
-        color: #007bb6;
-        font-size: 7rem;
         margin-left: 20px;
+        font-size: 2.8rem
     }
 
     .lesson-head {
-        font-size: 4rem;
+        font-size: 1rem;
         text-align: center;
+        margin: 20px 0;
     }
 
     .lesson-buttons button {
@@ -304,35 +309,54 @@ ANIMATIONS
 
     .level-buttons button,
     .lesson-buttons button {
-        font-size: 3rem;
+        font-size: 1.2rem;
+    }
+
+    .level-buttons button:active,
+    .lesson-buttons button:active {
+        background-color: white;
     }
 
     .lessonbylvl {
-        font-size: 6rem;
+        font-size: 2.4rem;
         text-align: center;
         color: white;
         background-color: #d1a11f;
         padding: 20px 0;
     }
 
+    .vocab-section {
+        margin: 0;
+    }
+
     .vocabulary {
-        height: 400px;
-        margin: 50px 0;
+        margin: 50px 0 0 0;
+        width: 100%;
+    }
+
+    .vocabulary h3,
+    .vocabulary em {
+        display: inline-block;
+        margin-right: 10px;
     }
 
     .vocabulary em {
-        font-size: 4rem;
+        font-size: 2rem;
     }
 
     .list-group-item {
-        font-size: 4.5rem;
+        font-size: 2rem;
         border: none;
         padding: 20px 0;
-        margin: 0 50px;
     }
 
-    .js--lesson-buttons {
-        display: none;
+    .container-fluid.lesson-buttons {
+        padding: 0;
+    }
+
+    .lesson-buttons button {
+        padding: 4px;
+        margin: 0;
     }
 
 }
