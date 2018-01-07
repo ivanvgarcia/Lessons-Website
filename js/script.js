@@ -35,7 +35,7 @@ $(document).ready(function () {
             $('.level-buttons, .lesson-buttons').removeClass('sticky-level-buttons');
         }
     }, {
-        offset: '100px'
+        offset: '50px'
     });
 
     // Animate Waypoint

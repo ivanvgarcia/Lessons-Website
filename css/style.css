@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -16,6 +17,13 @@ body {
     margin: 0 auto;
 }
 
+footer {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #1c6a9e;
+    color: #fff;
+}
+
 /***************
 MAIN NAVIGATION
 ***************/
@@ -23,32 +31,35 @@ MAIN NAVIGATION
 .navbar {
     margin: 0;
     border-radius: 0;
-    background-color: #2c3e50;
+    background-color: #34495e;
+    border: none;
+    box-shadow: 0 1px 1px #f0f0f0;
 }
 
 .navbar-inverse .navbar-brand,
 .navbar-inverse .navbar-nav li a {
     color: #fff;
+    -webkit-transition: .6s;
     transition: .6s;
 }
 
 .navbar-inverse .navbar-nav .open .dropdown-menu {
-    background-color: #2c3e50;
+    background-color: #34495e;
     color: #fff;
 }
 
 .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
-    background-color: #2c3e50;
+    background-color: #34495e;
     color: #fff;
 }
 
 .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:hover {
     background-color: #fff;
-    color: #2c3e50;
+    color: #34495e;
 }
 
 .fa-bars {
-    color: white;
+    color: #fff;
     float: right;
     font-size: 300%;
     display: none;
@@ -63,11 +74,13 @@ STICKY NAVIGATION
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #d1a11f;
+    background-color: #1c6a9e;
     border: none;
     border-radius: 0;
     z-index: 999;
+    -webkit-box-shadow: 0 1px 1px #626262;
     box-shadow: 0 1px 1px #626262;
+    -webkit-transition: .4s;
     transition: .4s;
 }
 
@@ -94,7 +107,8 @@ HOME PAGE
 ***************/
 
 .main-header {
-    background-image: linear-gradient(rgba(195, 150, 31, 0.8), rgba(195, 150, 31, 0.3)), url(img/header1-min.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(28, 106, 158, 0.71)), to(rgba(44, 62, 80, 0.8))), url(img/header1-min.jpg);
+    background-image: linear-gradient(linear, left top, left bottom, from(rgba(28, 106, 158, 0.71)), to(rgba(44, 62, 80, 0.8))), url(img/header1-min.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -110,19 +124,21 @@ HOME PAGE
 }
 
 .topic-header {
-    color: white;
-    background-color: #d1a11f;
+    color: #fff;
+    background-color: #1c6a9e;
     text-align: center;
 }
 
 .thumbnail {
+    -webkit-box-shadow: 1px 1px #ecf0f1;
     box-shadow: 1px 1px #2c3e50;
     ;
 }
 
 .thumbnail img {
+    -webkit-box-shadow: 1px 2px #ecf0f1;
     box-shadow: 1px 2px #2c3e50;
-    ;
+    width: 100%;;
 }
 
 .fa-superpowers {
@@ -151,10 +167,7 @@ h2 {
     margin-right: 5px;
 }
 
-footer {
-    text-align: center;
-    padding: 50px 0;
-}
+
 
 .level-buttons,
 .lesson-buttons {
@@ -166,11 +179,17 @@ footer {
 .level-buttons button {
     margin-right: 5px;
     border: none;
+    -webkit-box-shadow: 1px 1px #959595;
     box-shadow: 1px 1px #959595;
+}
+
+.lesson-head {
+    margin: 40px auto;
 }
 
 .lesson-head h1 {
     font-size: 3em;
+    text-align: center;
 }
 
 .lessonbylvl {
@@ -181,25 +200,77 @@ section {
     margin: 75px 0;
 }
 
+section.warm-up {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(236, 240, 241, 0.77)), to(rgba(0, 0, 0, 0.71))), url(img/warmup-min.jpg);
+    background-image: linear-gradient(linear, left top, left bottom, from(rgba(236, 240, 241, 0.77)), to(rgba(0, 0, 0, 0.71))), url(img/warmup-min.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 50px 0;
+    margin: 0;
+}
+
+.warm-up-title h2 {
+    padding-top: 45px;
+    margin: 0 auto;
+    width: 175px;
+    height: 175px;
+    border-radius: 50%;
+    color: #34495e;
+    background-color: #fff;
+    -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    -webkit-transition: .2s;
+    transition: .2s;
+    ;
+}
+
+.warm-up-title h2:hover {
+    -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.warm-up-text {
+    padding: 60px 60px 60px 0;
+    text-align: center;
+    font-size: 2.5rem;
+    color: #fff;
+    text-shadow: 1px 1px 2px #fff;
+}
+
 .btn {
-    background-color: #2c3e50;
+    background-color: #ecf0f1;
     border-color: #000;
+    -webkit-transition-duration: .4s;
     transition-duration: .4s;
+    color: #34495e;
 }
 
 .btn:hover {
     background-color: #fff;
-    color: #2c3e50;
+    color: #1c6a9e;
 }
 
 .vocab-section {
-    background-color: #2c3e50;
-    color: white;
+    background-color: #1c6a9e;
+    color: #fff;
+    margin: 0;
 }
 
 .vocabulary {
     padding: 15px;
     height: 200px;
+    margin: 10px 0;
+    border-radius: 20px;
+    -webkit-transition: background-color 0.4s ease;
+}
+
+.vocabulary:hover {
+    background-color: #fff;
+    color: #1c6a9e;
+    border-radius: 20px;
+    -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
 .about-img {
@@ -210,9 +281,28 @@ section {
     padding: 80px;
 }
 
-footer {
-    background-color: #d1a11f;
-    color: white;
+#discussion {
+    background-color: #ecf0f1;
+    padding: 80px 0;
+    margin: 0;
+}
+
+#discussion h2 {
+    color: #1c6a9e;
+}
+
+#assessment {
+    margin: 0;
+}
+
+#assessment h2 {
+    padding: 200px 0;
+    margin: 0;
+    text-align: left;
+}
+
+.list-group-item {
+    padding: 19.5px 20px;
 }
 
 /***************
@@ -232,6 +322,7 @@ ANIMATIONS
 .js--wp-3,
 .js--wp-4,
 .js--wp-5 {
+    -webkit-animation-duration: 1s;
     animation-duration: 1s;
 }
 
@@ -283,7 +374,7 @@ ANIMATIONS
     }
 
     #about h4 {
-        color: #2c3e50;
+        color: #1c6a9e;
         display: inline-block;
         margin: 40px 0;
     }
@@ -303,26 +394,37 @@ ANIMATIONS
         margin: 20px 0;
     }
 
+    .level-buttons button,
     .lesson-buttons button {
-        background-color: #d1a11f;
+        background-color: #1c6a9e;
     }
 
     .level-buttons button,
     .lesson-buttons button {
-        font-size: 1.2rem;
+        font-size: 2.4rem;
+        color: #fff;
     }
 
     .level-buttons button:active,
     .lesson-buttons button:active {
-        background-color: white;
+        background-color: #fff;
+        border-color: #fff;
     }
 
     .lessonbylvl {
         font-size: 2.4rem;
         text-align: center;
         color: white;
-        background-color: #d1a11f;
+        background-color: #1c6a9e;
         padding: 20px 0;
+    }
+
+    .warm-up-text {
+        padding: 60px 60px;
+    }
+
+    .warm-up-text p {
+        font-size: 2.5rem;
     }
 
     .vocab-section {
@@ -345,9 +447,9 @@ ANIMATIONS
     }
 
     .list-group-item {
-        font-size: 2rem;
+        font-size: 2.2rem;
         border: none;
-        padding: 20px 0;
+        padding: 20px 20px;
     }
 
     .container-fluid.lesson-buttons {
@@ -357,6 +459,12 @@ ANIMATIONS
     .lesson-buttons button {
         padding: 4px;
         margin: 0;
+    }
+
+    #assessment h2 {
+        padding: 40px;
+        margin: 0;
+        text-align: center;
     }
 
 }
