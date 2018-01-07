@@ -1,3 +1,7 @@
+/***************
+UNIVERSAL
+***************/
+
 * {
     margin: 0;
     padding: 0;
@@ -15,6 +19,25 @@ body {
 .row {
     max-width: 1170px;
     margin: 0 auto;
+}
+
+section {
+    margin: 75px 0;
+}
+
+h1 {
+    font-weight: 300;
+}
+
+h2 {
+    text-align: center;
+    font-size: 4rem;
+    margin-bottom: 50px;
+}
+
+.fa-linkedin-square {
+    color: #007bb6;
+    font-size: 1.2em;
 }
 
 footer {
@@ -63,6 +86,10 @@ MAIN NAVIGATION
     float: right;
     font-size: 300%;
     display: none;
+}
+
+.fa-superpowers {
+    color: #fff;
 }
 
 /***************
@@ -138,27 +165,11 @@ HOME PAGE
 .thumbnail img {
     -webkit-box-shadow: 1px 2px #ecf0f1;
     box-shadow: 1px 2px #2c3e50;
-    width: 100%;;
+    width: 100%;
+    ;
 }
 
-.fa-superpowers {
-    color: #fff;
-}
 
-.fa-linkedin-square {
-    color: #007bb6;
-    font-size: 1.2em;
-}
-
-h1 {
-    font-weight: 300;
-}
-
-h2 {
-    text-align: center;
-    font-size: 4rem;
-    margin-bottom: 50px;
-}
 
 #about h4 {
     font-size: 1.3em;
@@ -167,7 +178,22 @@ h2 {
     margin-right: 5px;
 }
 
+/***************
+BUTTONS
+***************/
 
+.btn {
+    background-color: #ecf0f1;
+    border-color: #000;
+    -webkit-transition-duration: .4s;
+    transition-duration: .4s;
+    color: #34495e;
+}
+
+.btn:hover {
+    background-color: #fff;
+    color: #1c6a9e;
+}
 
 .level-buttons,
 .lesson-buttons {
@@ -183,6 +209,10 @@ h2 {
     box-shadow: 1px 1px #959595;
 }
 
+/***************
+LESSONS PAGE
+***************/
+
 .lesson-head {
     margin: 40px auto;
 }
@@ -196,9 +226,6 @@ h2 {
     font-size: 2em;
 }
 
-section {
-    margin: 75px 0;
-}
 
 section.warm-up {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(236, 240, 241, 0.77)), to(rgba(0, 0, 0, 0.71))), url(img/warmup-min.jpg);
@@ -218,6 +245,7 @@ section.warm-up {
     border-radius: 50%;
     color: #34495e;
     background-color: #fff;
+    border: 4px solid #1c6a9e;
     -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
     -webkit-transition: .2s;
@@ -236,19 +264,6 @@ section.warm-up {
     font-size: 2.5rem;
     color: #fff;
     text-shadow: 1px 1px 2px #fff;
-}
-
-.btn {
-    background-color: #ecf0f1;
-    border-color: #000;
-    -webkit-transition-duration: .4s;
-    transition-duration: .4s;
-    color: #34495e;
-}
-
-.btn:hover {
-    background-color: #fff;
-    color: #1c6a9e;
 }
 
 .vocab-section {
@@ -273,14 +288,6 @@ section.warm-up {
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
-.about-img {
-    text-align: center;
-}
-
-.about-text {
-    padding: 80px;
-}
-
 #discussion {
     background-color: #ecf0f1;
     padding: 80px 0;
@@ -303,6 +310,14 @@ section.warm-up {
 
 .list-group-item {
     padding: 19.5px 20px;
+}
+
+.about-img {
+    text-align: center;
+}
+
+.about-text {
+    padding: 80px;
 }
 
 /***************
@@ -396,13 +411,8 @@ ANIMATIONS
 
     .level-buttons button,
     .lesson-buttons button {
-        background-color: #1c6a9e;
-    }
-
-    .level-buttons button,
-    .lesson-buttons button {
-        font-size: 2.4rem;
-        color: #fff;
+        padding: 4px;
+        font-size: 1.7rem;
     }
 
     .level-buttons button:active,
